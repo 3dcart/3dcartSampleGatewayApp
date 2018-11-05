@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row" style="margin-top:10px;">
+    <div class="col-md-12 t-5">
+    @Html.ActionLink("Install App", "InstallApp" ,null,  new { @class = "btn btn-primary btn-lg" })  
+    </div>
+</div>
+<br />
+
+ @if (ViewBag.Error!=null) {  
+  
+    <div class="row">
+       
+        <div class="col-md-12">
+        @if (ViewBag.Error)
+        {
+            <div class="alert alert-danger" role="alert">
+                Error Code: @ViewBag.ErrorCode  -  Error Message: @ViewBag.ErrorMessage
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>Aww yeah, the application was successfully installed.</p>
+            </div>
+        }
+        </div>
+    </div>
+ }
