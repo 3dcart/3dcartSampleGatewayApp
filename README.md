@@ -18,7 +18,7 @@ The app is built in .NET MCV (C#) and it is structured as follows:
 
 -- CheckoutController: Manages the checkout processed between the cart and the gateway
 
--- HomeController: Reders the installation button that initiates the oauth process (refer to AuthenticationController)
+-- HomeController: Renders the installation button that initiates the oauth process (refer to AuthenticationController)
 
 -- RefundController: Manages the post-order transactions (refunds/voids) between the cart and the gateway
 
