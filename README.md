@@ -16,7 +16,7 @@ The app is built in .NET MCV (C#) and it is structured as follows:
 
 -- AuthenticationController: Manages the installation of the app in any 3dcart store
 
--- CheckoutController: Manages the checkout processed between the cart and the gateway
+-- CheckoutController: Manages the checkout processes between the cart and the gateway
 
 -- HomeController: Renders the installation button that initiates the oauth process (refer to AuthenticationController)
 
